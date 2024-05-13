@@ -15,7 +15,7 @@ grocer = "0.1.0"
 It's simple to read a barcode from an image file with minimal code.
 ```rust
 fn main() {
-	let upc_code = scan_upc("images/barcode_picture.png");
+	let upc_code = grocer::scan_upc("images/barcode_picture.png");
 	println!("Scanned barcode: {}", upc_code);
 }
 ```

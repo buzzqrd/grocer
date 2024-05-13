@@ -283,7 +283,7 @@ fn scan_upc_line(file: &str, height_percent: f64) -> String {
 /// # Examples
 /// 
 /// ```
-///	let upc_code = scan_upc("images/image.png");
+///	let upc_code = grocer::scan_upc("images/image.png");
 /// ```
 pub fn scan_upc(file: &str) -> String {
 	let mut code: String = String::from("");
