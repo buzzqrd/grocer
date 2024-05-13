@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 description = "A simple Rust library for reading UPC barcodes from images."
 license = "BSD-2-Clause"
+keywords = ["barcode", "upc", "scan", "images"]
+readme = "README.md"
 
 
 [dependencies]
