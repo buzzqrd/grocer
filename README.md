@@ -7,16 +7,19 @@ A simple Rust library for reading UPC barcodes from images.
 Add grocer to your `Cargo.toml` file.
 ```toml
 [dependencies]
-grocer = "0.1.0"
+grocer = "0.1.2"
 ```
 
 ## Example
 
 It's simple to read a barcode from an image file with minimal code.
 ```rust
+use grocer;
+
 fn main() {
-	let upc_code = grocer::scan_upc("images/barcode_picture.png");
-	println!("Scanned barcode: {}", upc_code);
+	let scan_settings = grocer::ScannerSettings { high_speed: false, };
+	let barcode: grocer::Barcode = grocer::scan_upc("images/image.png", scan_settings);
+	println!("Code: {}", barcode.code);
 }
 ```
 

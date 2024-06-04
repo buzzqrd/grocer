@@ -299,8 +299,7 @@ fn scan_upc_line(file: &str, height_percent: f64) -> String {
 /// # Examples
 /// 
 /// ```
-///     use grocer;
-///     let scan_settings = grocer::ScannerSettings { high_speed: false, };
+///    	let scan_settings = grocer::ScannerSettings { high_speed: false, };
 ///	let barcode: grocer::Barcode = grocer::scan_upc("images/image.png", scan_settings);
 ///	println!("Code: {}", barcode.code);
 /// ```
